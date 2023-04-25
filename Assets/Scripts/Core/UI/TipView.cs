@@ -20,6 +20,10 @@ namespace Scripts.Core.UI
         {
             tipSubscription = new WeakSubscription<TipMessage>(ShowTip);
         }
+        public void OnDestroy()
+        {
+            tipSubscription.Dispose();
+        }
 
         private void ShowTip(TipMessage message)
         {
