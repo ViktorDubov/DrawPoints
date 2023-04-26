@@ -50,7 +50,7 @@ namespace Scripts.Core.Generators
             gameObject.GetAllChildren(ref allGO);
             foreach (var go in allGO)
             {
-                if (go.name.StartsWith("aps_"))
+                if (go.name.StartsWith("aps"))
                 {
                     aps.Add(go);
                 }
